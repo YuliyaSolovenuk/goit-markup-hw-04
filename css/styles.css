@@ -285,7 +285,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
-  background-size: 1440px;
+  background-size: cover;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 
   padding-top: 188px;
   padding-bottom: 188px;
@@ -296,6 +299,7 @@ body {
 }
 
 /* -------------------------- */
+<section class="customers-section section">
 /* -----section-benefits----- */
 /* -------------------------- */
 
@@ -422,7 +426,7 @@ body {
 /* ----------------------------- */
 
 .customers-section {
-  padding-top: 130px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -440,23 +444,18 @@ body {
   width: 168px;
   height: 88px;
 
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
   color: #8e8f99;
   border-radius: 4px;
 }
 
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--active-link-txt-cl);
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--active-link-txt-cl);
+  color: var(--active-link-txt-cl);
 }
 
 /* -------------------------- */
@@ -536,6 +535,7 @@ body {
 }
 
 .portfolio-text {
+  color: var(--body-txt-cl);
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
@@ -551,7 +551,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .portfolio-services {
@@ -560,10 +560,12 @@ body {
 
 .portfolio-services-link {
   display: block;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-services-link:hover {
-  border: 0.5px solid #f4f4fd;
+.portfolio-services-link:hover,
+.portfolio-services-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
